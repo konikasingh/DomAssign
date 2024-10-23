@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System for managing student details.">
+    <meta name="keywords" content="Student Registration, Student Records, HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="Registrstud.css">
+    <title>Student Registration System</title>
+</head>
+<body>
+
+    <!-- Content will go here -->
+   
+
+        <!-- Header Section -->
+        <header>
+            <h1>Student Registration System</h1>
+            <p>Welcome to the Student Registration System. This application allows you to add, edit, and delete student details such as name, class, address, and contact number. Manage your student records easily and efficiently!</p>
+        </header>
+    
+        <!-- Student Registration Form -->
+        <section>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="studentID">Student ID:</label>
+                    <input type="text" id="studentID" name="studentID" placeholder="Enter student ID" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email ID" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="contactNo">Contact No:</label>
+                    <input type="tel" id="contactNo" name="contactNo" placeholder="Enter contact number" required>
+                </div>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <!-- Display Section for Registered Students -->
+        <section id="displaySection">
+            <h2>Registered Students</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No.</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student records will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    
+    
+    
+    <script src="Registstud.js"></script>
+
+</body>
+</html>
